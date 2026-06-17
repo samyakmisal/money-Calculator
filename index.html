@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>VELOCITY — Proportional Wealth Calculator</title>
+  </head>
+  <body style="margin: 0; background: #0a0a0a; color: #fff; font-family: Inter, system-ui, sans-serif">
+    <div id="root"></div>
+
+    <!-- Shown only when opened as a local file (double-click) — Vite must run first -->
+    <div
+      id="boot-fallback"
+      hidden
+      style="
+        max-width: 32rem;
+        margin: 4rem auto;
+        padding: 2rem;
+        background: #171717;
+        border: 1px solid #262626;
+        border-radius: 1.5rem;
+        line-height: 1.6;
+      "
+    >
+      <p style="margin: 0 0 0.5rem; font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: #fde047">
+        VELOCITY
+      </p>
+      <h1 style="margin: 0 0 1rem; font-size: 1.5rem; color: #fff">Run the dev server first</h1>
+      <p style="margin: 0 0 1rem; color: #ffffff99; font-size: 0.95rem">
+        This app uses React and Vite. Opening <code style="color: #fde047">index.html</code> directly in the browser will not work.
+      </p>
+      <ol style="margin: 0; padding-left: 1.25rem; color: #ffffffcc; font-size: 0.95rem">
+        <li>Open a terminal in the project folder</li>
+        <li>Run <code style="color: #fde047">npm start</code></li>
+        <li>Your browser will open at <code style="color: #fde047">http://localhost:5173</code></li>
+      </ol>
+    </div>
+
+    <script>
+      if (location.protocol === "file:") {
+        document.getElementById("boot-fallback").hidden = false;
+      }
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
